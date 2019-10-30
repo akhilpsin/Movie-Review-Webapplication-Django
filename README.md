@@ -1,3 +1,2 @@
 # hello-world
-this is my start to github 
-print("helloworld")
+This is my first github program  to learn and experience how to use github
