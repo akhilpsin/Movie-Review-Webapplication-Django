@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="container-fluid">
+  <center>
+  <form method = "POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <H4>Are you sure to delete this!</H4>
+
+    <input type="submit" class="btn btn-danger" placeholder="Delete">
+  </form>
+  </center>
+</div>
+{% endblock %}

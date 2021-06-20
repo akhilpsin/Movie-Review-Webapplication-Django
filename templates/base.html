@@ -1,0 +1,25 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Movies</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="{%static 'style.css'%}">
+</head>
+<body>
+
+    <!-- Image and text -->
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand font-italic" href="{% url 'movieapp:index' %}">
+          <b>Movie Page</b>
+          <a type="submit" href="{% url 'movieapp:add_movie' %}" class="btn btn-primary btn-lg btn-block"> Add </a>
+      </a>
+    </nav>
+{% block body %}
+{% endblock %}
+
+
+</body>
+</html>

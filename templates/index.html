@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="container-fluid">
+   <div class="row">
+      {% for i in movie_list %}
+       <div class="col-md-4">
+          <h4><b>{{ i.name }} </b> </h4>
+          <img src="{{i.img.url}}" class="img-thumbnail" alt="Cinque Terre" width="300" height="500"><br>
+          <a type="submit" href="{% url 'movieapp:details' i.id %}" class="btn btn-primary btn-lg btn-block"> Click Here </a>
+       </div>
+
+      {% endfor %}
+   </div>
+</div>
+
+{% endblock %}
