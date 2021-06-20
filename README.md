@@ -1,4 +1,4 @@
-# hello-world
-clean this repo and add your ongoing project soon
-this is my start to github 
-print("helloworld")
+# Movie Review Web application
+
+### This is a mini project, created an webapplication to add and remove movie reviews.
+
